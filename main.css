@@ -1,0 +1,108 @@
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --p-font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--off-black);
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.container {
+  color: var(--white);
+  background-color: var(--dark-grey);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 350px;
+}
+
+img {
+  margin: 30px auto 20px;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.text {
+  text-align: center;
+}
+h2 {
+  margin: 10px auto 8px;
+  font-weight: 500;
+}
+h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+p {
+  color: var(--white);
+  font-size: var(--p-font-size);
+  margin: 20px auto;
+  font-weight: 300;
+}
+button {
+  display: block;
+  width: 85%;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--grey);
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+button a {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-weight: 700;
+}
+button:last-of-type {
+  margin: 10px auto 30px;
+}
+button:hover {
+  background-color: var(--primary-color);
+}
+button:hover a {
+  font-weight: 700;
+  color: var(--off-black);
+}
